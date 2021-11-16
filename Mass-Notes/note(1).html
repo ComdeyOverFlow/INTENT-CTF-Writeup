@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mass Notes</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="h1"></h1>
+    </header>
+    <main>
+        <img id="img" />
+        <pre id="pre"></pre>
+    </main>
+    <script>
+        let params = new URLSearchParams(window.location.search);
+        let note = params.get("note");
+
+        if (!note) {
+            window.location = "/";
+        }
+
+        try {
+            note = JSON.parse(note);
+        } catch {
+            window.location = "/";
+        }
+
+        h1.innerText = note.title;
+        pre.innerText = note.content;
+        img.src = "/avatar/" + note._id + ".png";
+    </script>
+</body>
+
+</html>
