@@ -2,7 +2,7 @@
 
 Url: https://etulosba.chal.intentsummit.org/
 
-File Attachments: [main.js](https://github.com/ComdeyOverFlow/INTENT-CTF/blob/main/main.js)
+File Attachments: [main.js](https://github.com/ComdeyOverFlow/INTENT-CTF-Writeup/blob/main/main.js)
 
 # Application Overview
 There are two Folders Which is `/files/images/` and `/files/binary`. Need a javascipt basic knowledge. 
